@@ -31,8 +31,7 @@ To compile and run the project, you need to have `clang` and `SDL2` installed on
 
 1. Clone the repository:
     ```
-    git clone https://github.com/yourusername/sketch-file-visualizer.git
-    cd sketch-file-visualizer
+    https://github.com/henry3361/Graphix_display.git
     ```
 
 2. Extract all provided files into your project directory.
