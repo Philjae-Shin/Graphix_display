@@ -40,7 +40,7 @@ To compile and run the project, you need to have `clang` and `SDL2` installed on
 
 To compile the provided skeleton files with graphics, use:
 ```
-clang -Dtest_list -std=c11 -Wall -pedantic -g list.c -o list -fsanitize=undefined -fsanitize=address
+clang -std=c11 -Wall -pedantic -g sketch.c displayfull.c -I/usr/include/SDL2 -lSDL2 -o sketch -fsanitize=undefined -fsanitize=address
 ```
 
 ### Running the Program
