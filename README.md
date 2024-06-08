@@ -36,37 +36,37 @@ To compile and run the project, you need to have `clang` and `SDL2` installed on
 ### Installation
 
 1. **Clone the repository:**
-    ```sh
-    https://github.com/henry3361/Graphix_display.git
-    ```
+   ```sh
+   https://github.com/henry3361/Graphix_display.git
+   ```
 
 2. Extract all provided files into your project directory.
 
 ### Compilation
 
 **To compile the provided skeleton files with graphics, use:**
-    ```sh
-    clang -std=c11 -Wall -pedantic -g sketch.c displayfull.c -I/usr/include/SDL2 -lSDL2 -o sketch -fsanitize=undefined -fsanitize=address
-    ```
+   ```sh
+   clang -std=c11 -Wall -pedantic -g sketch.c displayfull.c -I/usr/include/SDL2 -lSDL2 -o sketch -fsanitize=undefined -fsanitize=address
+   ```
 
 ### Running the Program
 
 **To run the program on a sketch file:**
-    ```sh
-    ./sketch sketch00.sk
-    ```
+   ```sh
+   ./sketch sketch00.sk
+   ```
 
 This will open a 200 x 200 black display window where the sketch will be visualised
 
 ### Testing
 
 **To test without the graphics module:**
-    ```sh
-    clang -DTESTING -std=c11 -Wall -pedantic -g sketch.c test.c -I/usr/include/SDL2 -o test -fsanitize=undefined -fsanitize=address
-    ```
-    ```sh
-    ./test
-    ```
+   ```sh
+   clang -DTESTING -std=c11 -Wall -pedantic -g sketch.c test.c -I/usr/include/SDL2 -o test -fsanitize=undefined -fsanitize=address
+   ```
+   ```sh
+   ./test
+   ```
 
 Make sure all sketch files(sketch00.sk to sketch09.sk) are persent in your local folder during testing
 
