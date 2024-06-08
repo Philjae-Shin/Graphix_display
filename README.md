@@ -2,35 +2,40 @@
 
 This repository contains the source code for a Sketch File Visualizer, a project developed as part of the COMS10016: Imperative and Functional Programming course at the University of Bristol. The project involves creating a program (`sketch.c`) that reads and visualizes .sk sketch files using a provided display module.
 
-## Project Overview
 
-### Task Description
+# Project Overview
 
-The main task is to develop a program (`sketch.c`) that reads in and visualizes .sk files using the `displayfull.h` module for graphics. The .sk files contain drawings or graphics encoded as a sequence of single-byte commands. The project is divided into several steps to incrementally build a sketch viewer with increasing functionality:
+This project consists of two main C source files, `sketch.c` and `displayfull.c`, and their corresponding header files `sketch.h` and `displayfull.h`. The codebase primarily deals with graphics-related functions, providing functionalities for displaying and manipulating various graphic objects.
 
-1. **Basic Sketch Viewer**: Supports simple commands to draw white lines on a black background.
-2. **Intermediate Sketch Viewer**: Adds support for additional commands to handle colors, blocks, and absolute positioning.
 
-### Provided Files
+## File Descriptions
 
-- `sketch.h` - Skeleton header file
-- `sketch.c` - Skeleton C file to be completed
-- `Makefile` - Basic Makefile for Unix
-- `displayfull.h` - Display module header
-- `displayfull.c` - Display module implementation
-- `test.c` - Testing framework
-- `sketch00.sk` to `sketch09.sk` - Example sketch files for testing
+### sketch.c
+The `sketch.c` file includes functions necessary for creating and manipulating graphic objects. The main functionalities of this file are:
+- Initialization of graphic objects
+- Setting and changing object properties
+- Rendering objects
 
-## Getting Started
+### sketch.h
+The `sketch.h` file declares the functions used in `sketch.c` and defines the necessary data structures. This header file allows other source files to use the functionalities provided by `sketch.c`.
 
-### Prerequisites
+### displayfull.c
+The `displayfull.c` file includes functions necessary for displaying graphic objects on the screen. The main functionalities of this file are:
+- Setting the position of graphic objects
+- Setting the color and style of objects
+- Handling the movement and animation of objects
+
+### displayfull.h
+The `displayfull.h` file declares the functions used in `displayfull.c` and defines the necessary data structures. This header file allows other source files to use the functionalities provided by `displayfull.c`.
+
+## Installation and Build
 
 To compile and run the project, you need to have `clang` and `SDL2` installed on your Unix-based system.
 
 ### Installation
 
-1. Clone the repository:
-    ```
+1. **Clone the repository:**
+    ```sh
     https://github.com/henry3361/Graphix_display.git
     ```
 
@@ -58,6 +63,8 @@ To test without the graphics module:
 ```
 clang -DTESTING -std=c11 -Wall -pedantic -g sketch.c test.c -I/usr/include/SDL2 -o test -fsanitize=undefined -fsanitize=address
 ```
+
+
 ```
 ./test
 ```
