@@ -37,7 +37,7 @@ To compile and run the project, you need to have `clang` and `SDL2` installed on
 
 1. **Clone the repository:**
    ```sh
-   https://github.com/henry3361/Graphix_display.git
+   https://github.com/Philjae-Shin/Graphix_display.git
    ```
 
 2. Extract all provided files into your project directory.
